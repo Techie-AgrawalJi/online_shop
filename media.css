@@ -1,0 +1,72 @@
+@media screen and (orientation: portrait) {
+  .left,
+  .right,
+  .header {
+    font-size: 25px;
+  }
+  .contain {
+    display: block;
+  }
+  .form {
+    width: 100vw;
+    margin: 0;
+  }
+  .formdiv {
+    padding-top: 40px;
+  }
+  .contain > .text,
+  .contain > .items {
+    width: 100%;
+  }
+  .form {
+    margin-top: 20px;
+    /* height: 100vh; */
+  }
+  .details {
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .text {
+    font-size: 35px;
+  }
+  .contain {
+    font-size: 25px;
+  }
+  #submitbtn {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .details {
+    /* flex-direction: row; */
+    height: 100%;
+  }
+  .Gfather,
+  .father {
+    align-items: center;
+  }
+  .Gfatherimg,
+  .fatherimg {
+    height: 60%;
+    width: 25%;
+  }
+  .abtfather {
+    height: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+    .Gfatherimg,
+  .fatherimg {
+    height: 40%;
+    width: 30%;
+  }
+  .left,
+  .right,
+  .header {
+    font-size: 20px;
+  }
+  .content{
+    margin-top: none;
+  }
+}
