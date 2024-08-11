@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
 * {
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -35,7 +35,7 @@
   background-image: url(VPSmain.jpg);
   background-attachment: fixed;
   background-size: 100% 100%;
-  filter: blur(2px);
+  filter: blur(3px);
   height: 100vh;
 }
 .nav {
@@ -61,7 +61,7 @@
   font-size: 35px;
   justify-content: center;
   position: relative;
-  color: rgb(219, 232, 240);
+  color: black;
   width: 100%;
 }
 .right > a {
@@ -73,35 +73,38 @@
   display: flex;
 }
 .form {
-  background-color: rgba(243, 132, 132, 0.2);
+  background-color: rgb(132 225 243 / 66%);
   position: absolute;
   z-index: 5;
   border-radius: 20px;
   margin: 8vw 10vw 0 10vw;
-  font-size: 35px;
+  font-size: 30px;
   width: 80vw;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
+  height:80vh;
   flex-direction: column;
   align-items: center;
 }
 .contain > .items,
 .contain > .text {
   width: 50%;
+  max-height: 80%;
   margin: 10px;
 }
 .items {
-  color: bisque;
+  color: rgb(6, 6, 6);
 }
 .text {
-  font-size: 45px;
-  font-family: "Luxurious Script", cursive;
-  font-weight: 900;
-  letter-spacing: 2px;
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+overflow: auto;
+  /* font-weight: 600; */
+  /* letter-spacing: 2px; */
 }
 .form > div > div > label > input,
 textarea {
-  background-color: rgb(249, 193, 175, 0.6);
+  background-color: rgba(14, 93, 113, 0.6);
   border-radius: 10px;
   margin: 5px 0;
   padding: 5px;
@@ -109,8 +112,10 @@ textarea {
   width: 70%;
 }
 .form input::placeholder {
-  color: crimson;
-  font-size: 20px;
+  color:rgb(57, 9, 230) ;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
 }
 .contain {
   display: flex;
@@ -121,9 +126,11 @@ textarea {
 }
 #submitbtn {
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-  background-color: rgb(249, 193, 175, 0.6);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(56, 17, 4, 0.6);
   border-radius: 10px;
+  padding: 5px;
+  color: aliceblue;
   width: 25vw;
 }
 .content {
@@ -131,7 +138,7 @@ textarea {
   width: 90vw;
   border-radius: 15px;
   margin: 10vh 5vw;
-  height: 90vh;
+  height: 87vh;
   position: absolute;
   z-index: 5;
   display: flex;
@@ -139,7 +146,6 @@ textarea {
   align-items: center;
 }
 .head {
-  color: black;
   font-family: Cursive;
 }
 .details {
@@ -156,6 +162,7 @@ textarea {
   width: 90%;
   border-radius: 15px;
   height: 50%;
+  padding: 10px;
   display: flex;
 }
 .fatherimg,
@@ -175,7 +182,7 @@ textarea {
   overflow: auto;
   font: 25px cursive;
   color: black;
-  background-color: rgb(214 129 129 / 25%);
+  background-color: rgb(224 73 73 / 49%);
 }
 .Gfatherimg {
   background-image: url(BABA2.jpeg);
