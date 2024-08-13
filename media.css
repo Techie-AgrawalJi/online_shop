@@ -103,9 +103,11 @@
   .content {
     margin-top: none;
   }
-  .options{
-  font-size: 20px;
-}
+
+  .options {
+    font-size: 20px;
+  }
+
   .contain>.items {
     width: 100%;
     font-size: 20px;
@@ -118,9 +120,11 @@
   .inputs input {
     height: auto;
   }
- .items #submitbtn{
-font-size: 20px;
-}
+
+  .items #submitbtn {
+    font-size: 20px;
+  }
+
   .contain>.text {
     font-size: 20px;
   }
