@@ -2,7 +2,7 @@
 * {
   margin: 0;
   /* box-sizing: border-box; */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -31,7 +31,7 @@
   right: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: -1;
   background-image: url(VPSmain.jpg);
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -39,12 +39,12 @@
   height: 100vh;
 }
 .nav {
-  background-color: rgb(247, 82, 73, 0.4);
+  background-color: rgba(105, 17, 12, 0.61);
   display: flex;
   font-weight: 800;
-  position: absolute;
+  position: fixed;
   text-align: center;
-  z-index: 2;
+  z-index: 15;
   width: 100vw;
   top: 0;
 }
@@ -64,86 +64,56 @@
   color: black;
   width: 100%;
 }
-.right > a {
+ #sign {
   text-decoration: none;
-  color: black;
-}
-.formdiv {
-  position: absolute;
-  display: flex;
-}
-.form {
-  background-color: rgb(132 225 243 / 66%);
-  position: absolute;
-  z-index: 5;
-  border-radius: 20px;
-  margin: 8vw 10vw 0 10vw;
-  font-size: 30px;
-  width: 80vw;
-  /* padding: 10px; */
-  display: flex;
-  height:80vh;
-  flex-direction: column;
-  align-items: center;
-}
-.contain > .items,
-.contain > .text {
-  width: 50%;
-  max-height: 80%;
-  margin: 10px;
-}
-.items {
-  color: rgb(6, 6, 6);
-}
-.text {
-  font-size: 40px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-overflow: auto;
-  /* font-weight: 600; */
-  /* letter-spacing: 2px; */
-}
-.form > div > div > label > input,
-textarea {
-  background-color: rgba(14, 93, 113, 0.6);
-  border-radius: 10px;
-  margin: 5px 0;
+  border: 2px solidblack;
   padding: 5px;
-  height: 40px;
-  width: 70%;
+  border-radius: 10px;
+  background-color: rgba(232, 6, 6, 0.364);
+  color: white;
 }
-.form input::placeholder {
-  color:rgb(57, 9, 230) ;
+#sign:hover{
+  color: aqua;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.options{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  width: 90vw;
+  background-color: #460101b3;
+  border-radius: 15px;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  color: white;
+  z-index: 1;
+  margin:auto;
+  margin-top: 65px;
+  margin-bottom: 20px;
+}
+.options span{
   font-size: 25px;
-  font-weight: 600;
-  font-family: 'Courier New', Courier, monospace;
-}
-.contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-}
-#submitbtn {
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: rgba(56, 17, 4, 0.6);
-  border-radius: 10px;
-  padding: 5px;
-  color: aliceblue;
-  width: 25vw;
 }
 .content {
   background-color: rgba(245, 246, 243, 0.2);
   width: 90vw;
   border-radius: 15px;
-  margin: 10vh 5vw;
+  margin: auto;
   height: 87vh;
-  position: absolute;
+  position: relative;
   z-index: 5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .head {
   font-family: Cursive;
@@ -194,4 +164,11 @@ textarea {
 }
 .baba {
   border-radius: 15px;
+}
+.home{
+  
+  font-size: 35px;
+  margin: auto;
+  /* position: relative;
+  z-index: 5; */
 }

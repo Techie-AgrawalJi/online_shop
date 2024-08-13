@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in</title>
+</head>
+<link rel="stylesheet" href="LP.css" />
+<link rel="stylesheet" href="media.css" />
+<link rel="stylesheet" href="form.css" />
+<style>
+  .options{
+    grid-template-columns: repeat(2,1fr);
+    width:80vw;
+  }
+</style>
+<body>
+  <main>
+    <div class="nav">
+      <span class="header">Welcome to Vinod Provision Store</span>
+    </div>
+    <div class="options">
+      <span><a href="index.html"> Home</a></span>
+      <span><a href="view.html"> View</a></span>
+    </div>
+    <div class="formdiv">
+      <form method="post" class="form">
+        <div class="contain">
+          <div class="text">We will be happy to have you as our customer. We promise you the best uncompromised quality
+            goods at affordable price. We will appreciate your first step of registering into our shop. Kindly register
+            by filling and submitting the form.
+          </div>
+          <div class="items">
+            <div class="inputs">
+              <label for="name" id="name_label"> Name
+                <input type="text" id="name" placeholder="Enter Your Name." required autofocus /></label>
+              <label for="email" id="email_label"> Email
+                <input type="email" id="email" placeholder="Enter your email." /></label>
+              <label for="number" id="number_label"> Contact number
+                <input type="digits" id="number" placeholder="Enter Phone Number." required /></label>
+              <label for="address"> Address
+                <textarea for="Address" maxlength="50" required></textarea> </label>
+              <div class="submit">
+                <input type="submit" name="button_label" id="submitbtn" />
+              </div>
+            </div>
+          </div>
+      </form>
+
+      <div class="bgimg"></div>
+  </main>
+</body>
+
+</html>
