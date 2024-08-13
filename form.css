@@ -10,26 +10,16 @@
   justify-content: center;
   align-items: center;
 }
-
-.text {
-}
-
-.inputs,
-input {
-  width: 100%;
-}
-
 label,
 input,
 textarea {
+  width: 100%;
   display: block;
 }
-
 .items {
-  display: flex;
   padding: 15px;
-  flex-direction: column;
   color: white;
+  width: 40%;
 }
 
 .text {
@@ -38,8 +28,6 @@ textarea {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   overflow: auto;
-  /* font-weight: 600; */
-  /* letter-spacing: 2px; */
 }
 
 input,
@@ -47,9 +35,11 @@ textarea {
   background-color: rgba(14, 93, 113, 0.6);
   border-radius: 10px;
   margin: 5px 0;
-  padding: 5px;
   height: 40px;
-  width: 70%;
+  font-size: 25px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: capitalize;
 }
 
 input::placeholder {
@@ -64,8 +54,6 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 90%;
-
 }
 
 #submitbtn {
@@ -74,15 +62,7 @@ input::placeholder {
   background-color: rgba(248, 73, 14, 0.6);
   border-radius: 10px;
   margin: auto;
+  width: fit-content;
   color: black;
   font-weight: 600;
-}
-
-input,
-textarea {
-  font-size: 25px;
-  width: auto;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  text-transform: capitalize;
 }
