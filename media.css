@@ -85,6 +85,27 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .email {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer .heading{
+    width: 40%;
+  }
+  .email {
+    display: block;
+  }
+
+  .has .email span {
+    display: block;
+    margin: 10px;
+  }
+}
+
 @media screen and (max-width: 400px) {
 
   .Gfatherimg,
@@ -95,7 +116,6 @@
 
   .left,
   .right,
-  .header,
   .options {
     font-size: 20px;
   }
