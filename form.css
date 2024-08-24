@@ -39,16 +39,19 @@ textarea {
   font-size: 25px;
   color: white;
   font-family: "Courier New", Courier, monospace;
+}
+#name{
   text-transform: capitalize;
 }
-
-input::placeholder {
+input::placeholder,textarea::placeholder {
   color: rgb(186, 177, 216);
   font-size: 25px;
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
 }
-
+input{
+  margin:  25px 0;
+}
 .contain {
   display: flex;
   justify-content: center;

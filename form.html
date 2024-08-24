@@ -26,27 +26,27 @@
       <span><a href="view.html"> View</a></span>
     </div>
     <div class="formdiv">
-      <form method="post" class="form">
+      <div class="form">
         <div class="contain">
           <div class="text">We welcome you as our valued customer! Enjoy top-quality products at affordable prices.
             Please register now by filling out the form.
           </div>
           <div class="items">
-            <div class="inputs">
-              <label for="name" id="name_label"> Name
-                <input type="text" id="name" placeholder="Enter Your Name." required autofocus /></label>
-              <label for="email" id="email_label"> Email
-                <input type="email" id="email" placeholder="Enter your email." /></label>
-              <label for="number" id="number_label"> Contact number
-                <input type="digits" id="number" placeholder="Enter Phone Number." required /></label>
-              <label for="address"> Address
-                <textarea for="Address" maxlength="50" required></textarea> </label>
+            <form method="post" class="inputs" onsubmit="sendEmail(); reset(); return false;">
+              <!-- <label for="name" id="name_label"> Name -->
+                <input type="text" id="name" placeholder="Your Name"  autofocus />
+              <!-- <label for="email" id="email_label"> Email -->
+                <input type="email" id="email" placeholder="Your email" />
+              <!-- <label for="number" id="number_label"> Contact number -->
+                <input type="digits" id="number" placeholder="Your Phone Number"  />
+              <!-- <label for="address"> Address -->
+                <textarea for="Address" maxlength="100" id="address" placeholder="Your Address" ></textarea> 
               <div class="submit">
                 <input type="submit" name="button_label" id="submitbtn" />
               </div>
-            </div>
+            </from>
           </div>
-      </form>
+        </div>
     </div>
     <div class="footer">
       <div class="heading">Contact us</div>
