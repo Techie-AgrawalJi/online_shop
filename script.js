@@ -27,8 +27,3 @@ form.addEventListener("submit", (e) => {
     sendEmail();
 
 })
-let products={ "oil": "Wow oil",
-             price: 200,
-              "shampoo": "Wow shampoo",
-              price: 300,
-            }
