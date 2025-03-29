@@ -30,6 +30,4 @@ form.addEventListener("submit", (e) => {
 let products ={
     name: "shampoo",
     price: "200",
-    name2: "oil",
-    price2: "300",
 }
